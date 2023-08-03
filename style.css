@@ -17,7 +17,7 @@ header{
 
 }
 .join-list-box{
-  transform: translateX(80%);
+  transform: translateX(90%);
   display: flex;
   justify-content: center;
   max-width: 468px;
@@ -44,8 +44,8 @@ header{
   font-size: 20px;
 }
 .input-box div{
-  width: 20%;
-  height: 100%;
+  width: 30%;
+  height: 70%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -117,4 +117,40 @@ header{
   background-color: blue;
   left: 50%;
   top: 50%;
+}
+.disagree::before{
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.disagree::after{
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+#joinbtn{
+  width: 100%;
+  height: 58px;
+  font-size: 20px;
+}
+.btn-primary{
+  color: #fff;
+  background-color: #03c75a;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+}
+.text-secondary{
+  color: #8e8e8e;
+}
+.text-red{
+  color: red;
+}
+.text-green{
+  color: #08a600;
+}
+.border-red{
+  border-color: red;
+}
+.border-act{
+  border-color: #03c75a;
+}
+.warn{
+  margin: 15px 0;
 }
