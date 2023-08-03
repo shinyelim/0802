@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>join</title>
+  <!--JQuery CDN-->
+
+  <link rel="stylesheet" href="../0802/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">
+      <a href="https://www.naver.com/">
+      <img src="../0802/images/logo.png" alt="logo">
+      </a>
+    </h1>
+  </header>
+  <section class="join-list-box">
+    <form action="./seindex.html" id="join-forn">
+     <div class="join-box-item userid">
+       <label >아이디
+        <div class="input-box">
+          <input type="text" name="userid">
+          <div>@naver.com</div>
+        </div>
+       </label>
+       <p class="warn"></p>
+      </div>
+      <div class="join-box-item userpw">
+        <label>비밀번호
+          <div class="input-box">
+            <input type="password" name="userpw">
+          </div>
+          <p></p>
+          <img src="../0802/images/pw-close.png" alt="password-icon">
+        </label>
+        <p class="warn"></p>
+      </div>
+      <div class="join-box-item userpw-chk">
+        <label>비밀번호 재확인
+          <div class="input-box">
+            <input type="password" name="userpw-chk">
+          </div>
+          
+          <img src="../0802/images/pw-close.png" alt="password-icon">
+        </label>
+        <p class="warn"></p>
+      </div>
+      <div class="join-box-item username">
+        <label>이름
+          <div class="input-box">
+            <input type="text" name="username">
+          </div>
+          
+         
+        </label>
+        <p class="warn"></p>
+      </div>
+      <div class="join-box-item birth">
+        <label>생일
+          <div class="three-box">
+          
+            <input type="text" name="year" id="year" maxlength="4" placeholder="년(4자)">
+          </div>
+          <div class="input-box">
+            <select name="month" id="month">
+              <option value="">월</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <input type="text" name="date" id="date" maxlength="2" placeholder="일">
+          </div>
+          </div>
+          <p></p>
+          
+        </label>
+        <p class="warn"></p>
+      </div>
+      <div class="join-item gender">
+        <p>성별</p>
+        <div class="three-box">
+          <div class="input-box">
+            <p>남자</p>
+            <input type="radio" name="gender" value="0" id="male">
+          </div>
+          <div class="input-box">
+            <p>여자</p>
+            <input type="radio" name="gender" value="1" id="female">
+          </div>
+          <div class="input-box">
+            <p>선택안함</p>
+            <input type="radio" name="gender" value="2" id="no-gender">
+          </div>
+        </div>
+      </div>
+      <div class="join-box-item usermail">
+        <label>본인 확인 이메일
+          <span class="text-secondary">(선택)</span>
+          <div class="input-box">
+            <input type="text" name="usermail" id="email" placeholder="선택입력">
+          </div>
+        </label>
+        <p class="warn"></p>
+      </div>
+      <div class="join-box-item phone">
+        <p>휴대전화</p>
+        <div class="input-box">
+          <select name="country">
+            <option value="233">가나 +233</option>
+            <option value="30">그리스 +30</option>
+            <option value="82" selected>대한민국 +82</option>
+            <option value="49">독일 +49</option>
+            <option value="960">몰디브 +960</option>
+            <option value="1">미국/캐나다 +1</option>
+            <option value="254">케나 +254</option>
+          </select>
+        </div>
+      </div>
+      <div class="phonenum">
+        <div class="input-box">
+          <input type="text" name="phonenum" placeholder="전화번호_입력">
+        </div>
+        <button type="button" id="veribtn" class="btn-primary">인증번호 받기</button>
+
+      </div>
+      <div class="input-box disinput">
+        <input disabled type="text" id="veritext" name="veritext" placeholder="인증번호를 입력해주세요~">
+        <div></div>
+        <p class="warn"></p>
+      </div>
+      <div class="join-box-item address">
+        <p>주소</p>
+        <div class="postnum">
+          <div class="input-box">
+            <input type="text" placeholder="우편번호">
+
+          </div>
+          <button type="button" class="btn-primary">우편번호 찾기</button>
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="주소">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="상세주소">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="참고항목">
+        </div>
+        
+      </div>
+      <button type="submit" id="joinbtn" class="btn-primary">가입하기</button>
+    </form>
+    
+  </section>
+   
+    
+  
+ <script src="../0802/javascript.js"></script> 
+</body>
+</html>

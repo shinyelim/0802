@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*logo*/
+.gnb-header{
+  position: relative;
+  right: 50%;
+
+}
+.logo{
+  position: relative;
+  left: 87%;
+  top: 50px;
+}
+.logo img{
+  width: 240px;
+}
+.field{
+  margin-left: 30% ;
+  margin-top: 10%;
+  max-width: 468px;
+
+}
+.field-ID input{
+  
+  width: 300px;
+  height: 45px;
+    /*border: 1px solid #000;*/
+} 
+.field span{
+  visibility: visible;
+  color: red;
+
+} 
+.field-ID h1{
+  font-size: 20px;
+  font-weight: 300;
+}
+.ID-Name{
+  position: relative;
+  top: -34px;
+  left: 196px;
+
+  color: #aaa6a6;
+}
+.field-PW input{
+width:300px ;
+height: 45px;
+}
+.field-PW-R input{
+  width: 300px;
+  height: 45px;
+}
+.field-Name input{
+  width: 300px;
+  height: 45px;
+}
+
+.logo img{
+  
+  width: 200px;
+
+
+  }
+
+
+/*Gander*/
+.field-gander{
+
+
+}

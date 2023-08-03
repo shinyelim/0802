@@ -1,0 +1,120 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+header{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.logo img{
+  width: 200px;
+
+}
+.join-list-box{
+  transform: translateX(80%);
+  display: flex;
+  justify-content: center;
+  max-width: 468px;
+}
+.join-box-item{
+  margin-bottom: 20px;
+}
+.input-box{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top:10px ;
+  padding: 10px 12px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  cursor: pointer;
+}
+.input-box input{
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.input-box div{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.input-box p{
+  margin-right: 5px;
+}
+.input-box img{
+  width: 25px;
+}
+.three-box{
+  display: flex;
+  justify-content: space-between;
+}
+.three-box .input-box{
+  width: calc((100% - 20px) /3);
+}
+.input-box select{
+  width: 100%;
+  font-size: 16px;
+  color: #777;
+  border: none;
+  outline: none;
+}
+.gender .input-box{
+  display: flex;
+  justify-content: center;
+
+}
+.gender input[type="radio"]{
+  display: none;
+}
+.phonenum,
+.postnum{
+  display: flex;
+  align-items: center;
+}
+.phonenum .input-box,
+.postnum .input-box{
+  width: calc((100% - 120px));
+  margin-right: 5px;
+}
+.phonenum button,
+.postnum button{
+  width: 115px;
+  height: 52px;
+  margin-top:10px ;
+
+}
+.disinput,
+.disinput input{
+  cursor: not-allowed;
+  background-color: #f7f7f7;
+}
+.disagree{
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+.disagree::before,
+.disagree::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: blue;
+  left: 50%;
+  top: 50%;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>join membership</title>
+  <link rel="stylesheet" href="../0727/join membership.css">
+  <!--JQuery CDN-->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+  <div class="back">
+    <header class="gnb-header">
+      <div class="logo">
+        <img src="../0727/images/logo.png" alt="logo">
+      </div>
+    </header>
+    
+    <!---ID박스-->
+    <form  id="form02" action="https://www.naver.com/">
+      <section class="field">
+   
+        <div class="field-ID">
+          <h1>아이디</h1>
+          <input type="text">
+          <p class="ID-Name">@naver.com</p>
+          <span>필수정보입니다.</span>
+        </div>
+       
+    
+      
+       <!--password박스-->
+        <div class="field-PW">
+        <h1>비밀번호</h1>
+        <input type="text">
+     
+       </div>
+        <span>필수 정보입니다.</span>
+     
+      
+      <!--password 재확인-->
+      <div class="field-PW-R">
+        <label for="PW-R">비밀번호</label>
+       <input type="text">
+      </div> 
+      <span>필수 정보입니다.</span>
+      <!--이름-->
+      <div class="field-Name">
+        <!--Name-->
+        <h1>이름</h1>
+        <input type="text">
+      </div>
+      <span>필수정보입니다.</span>
+      <div class="field-Day">
+        <!--생년월일-->
+        <b>생년월일</b>
+        <input class="birth_year" type="text">
+     
+        <select class="box" id="birth_year">
+          <option disabled selected>월</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <select class="box" id="birth_year">
+          <option disabled selected>일</option>
+        </select>
+      </div>
+      <span>태어난 년도 4자리를 정확하게 입력하세요.</span>
+    <div class="field-gander">
+     <label><input type="radio" name="gneder">남자</label>
+     <label><input type="radio" name="gneder">여자</label>
+     <label><input type="radio" name="gneder">선택안함</label>
+    </div>
+    <!--email-->
+    <div class="field-email">
+      <h1>본인 확인 이메일<small>(선택)</small></h1>
+      <input type="text" value="선택입력">
+    </div>
+    <span>이메일을 바르게 입력해주세요.</span>
+    <!--휴대전화번호-->
+    <div class="field-phone-num">
+      <b>휴대전화</b>
+      <select name="phone num" id="phone-num">
+        <option value="233">가나 +233</option>
+       <option value="30">그리스 +30</option>
+      <option value="82" selected>대한민국 +82</option>
+      <option value="49">독일 +49</option>
+      <option value="960">몰디브 +960</option>
+      <option value="1">미국/캐나다 +1</option>
+      <option value="254">케나 +254</option>
+      <div class="phone -Certified">
+      <input type="text" value="전화번호 입력">
+      <button class="Certified-btn">인증번호 받기</button>
+      <input type="text" value="인증번호 입력하세요.">
+      </div>
+      </select>
+    </div>
+    <span>필수정보입니다.</span>
+  </section>
+    <!--주소 찾기-->
+    
+
+
+  
+ 
+      
+    
+
+   
+
+
+   
+   
+
+      
+    </div>
+  </div>
+</form>
+
+  
+ <script src="../0727/join membership.js"></script>
+</body>
+</html>
