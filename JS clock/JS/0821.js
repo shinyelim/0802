@@ -50,7 +50,17 @@ let products = [
 ]
 let list = document.querySelector('.box-list');
 console.log(list);
+//let imgBox = '<div class="img-box"><img src="https://www.happyconstore.com/file/image/202308031031043518"></div>';
+//document.querySelector('.box-list').insertAdjacentHTML('beforeend',imgBox);
+
 products.forEach(function (item) {
+let imgBox = '<div class="box-item"><img></div>'
+imgBox.src = item.img;
+imgBox.alt = item.title;
+document.querySelector('.box-list').insertAdjacentHTML('afterbegin',imgBox); 
+
+})
+/*products.forEach(function (item) {
   let boxItem = document.createElement('div');
   boxItem.classList.add('.box-item');
   list.appendChild(boxItem);
@@ -71,13 +81,21 @@ products.forEach(function (item) {
   boxPrice.innerHTML = item.Price;
   shoInfo.appendChild(boxPrice);
   
-  
+  })
 
 /*let shoInfo = document.createElement('div');
 shoInfo.classList.add('sho-info');
 boxItem.appendChild(shoInfo);*/
 
-})
+
+//Javascript로 html 생성하는 방법2 (최신문법)
+/*let pTag = '<p class="text">html to~ </p>';
+//('.').insertAdjacentHTML(추가할 위치) => 문자형 html을 넣어주는 함수
+//첫번째 파라미터:추가 할 위치(**beforeend = 안쪽 맨밑)
+//두번째 파라미터:추가 할 html 문자를 넣으면 됨//
+
+document.querySelector('.box-list').insertAdjacentHTML('beforeend',pTag);
+
 
 //creatElemet로 products length만큼 html 생성
 
