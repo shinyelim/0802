@@ -53,12 +53,39 @@ console.log(list);
 //let imgBox = '<div class="img-box"><img src="https://www.happyconstore.com/file/image/202308031031043518"></div>';
 //document.querySelector('.box-list').insertAdjacentHTML('beforeend',imgBox);
 
-products.forEach(function (item) {
-let imgBox = '<div class="box-item"><img></div>'
-imgBox.src = item.img;
-imgBox.alt = item.title;
-document.querySelector('.box-list').insertAdjacentHTML('afterbegin',imgBox); 
+products.forEach(function (item,index) {
+  //div박스 생성//
+  let boxItem = `<div class="box-item"></div>`;
+  document.querySelector('.box-list').insertAdjacentHTML('beforeend',boxItem);
+//내가 원하는 위치에 insert//
+let boxImg = `<img src="${item.img}" alt="${item.title}">`   
+document.querySelectorAll('.box-item')[index].insertAdjacentHTML('beforeend',boxImg);
 
+let shoInfo = `<div class="sho-info"></div>`;
+document.querySelectorAll('.box-item')[index].insertAdjacentHTML('beforeend',shoInfo);
+let boxTitle =`<h2>${item.title}</h2>`;
+document.querySelectorAll('.sho-info')[index].insertAdjacentHTML('beforeend',boxTitle);
+let boxPrice = `<p>${item.Price}</p>`;
+document.querySelectorAll('.sho-info')[index].insertAdjacentHTML('beforeend',boxPrice);
+
+
+})
+
+//insertAdjacentHTML 사용/ backtick을 이용해서 코드 축약
+//products라는 배열을 순회하면서 가져온 값 => item parameter값이다.
+//item.img => item에서 img라는 key값의 value
+products.forEach(function (item) {
+  let boxItem = `
+  <div class="box-item">
+  <img src="${item.img}" alt="${item.title}">
+  <div class="sho-info">
+  <h1>${item.title}</h1>
+  <p>${item.Price}</p>
+  
+  </div> 
+  </div>
+  `
+  document.querySelector('.box-list').insertAdjacentHTML('beforeend',boxItem);
 })
 /*products.forEach(function (item) {
   let boxItem = document.createElement('div');
